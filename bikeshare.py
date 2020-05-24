@@ -77,7 +77,7 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     # Extracts month, day and hour from the Start Time column to create an new columns
     df['month'] = df['Start Time'].dt.month
-    df['day'] = df['Start Time'].dt.weekday_name
+    df['day'] = df['Start Time'].dt.day_name
     df['hour'] = df['Start Time'].dt.hour
 
     # filter by month if applicable
@@ -152,7 +152,7 @@ def trip_duration_stats(df):
     print('  {} days, {} hours, {} minutes and {} seconds'.format(days, hours, minutes, remaining_seconds))
 
     # Displays mean travel time
-    mean_travel_time = df['Trip Duration'].mean().astype(int)
+    mean_travel_time = df['Trip Duration'].mean()
     days, hours, minutes, remaining_seconds = convert_time(mean_travel_time)
     print('\n* The mean travel time is:', mean_travel_time)
     print('  {} minutes and {} seconds'.format(minutes, remaining_seconds))
