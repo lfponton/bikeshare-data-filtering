@@ -2,10 +2,11 @@
 24/05/2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+Bikeshare.py is a script that allows the user to filter and visualize data from 3 datasets.
+These datasets correspond to the cities of Chicago, New York City and Washington.
 
 ### Files used
 Include the files used
