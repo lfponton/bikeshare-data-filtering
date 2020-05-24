@@ -9,7 +9,10 @@ Bikeshare.py is a script that allows the user to filter and visualize data from 
 These datasets correspond to the cities of Chicago, New York City and Washington.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This project was completed as a part of the Udacity Programming for Data Science with Python progam.
