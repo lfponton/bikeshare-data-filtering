@@ -152,7 +152,7 @@ def trip_duration_stats(df):
     print('  {} days, {} hours, {} minutes and {} seconds'.format(days, hours, minutes, remaining_seconds))
 
     # Displays mean travel time
-    mean_travel_time = df['Trip Duration'].mean()
+    mean_travel_time = int(df['Trip Duration'].mean())
     days, hours, minutes, remaining_seconds = convert_time(mean_travel_time)
     print('\n* The mean travel time is:', mean_travel_time)
     print('  {} minutes and {} seconds'.format(minutes, remaining_seconds))
